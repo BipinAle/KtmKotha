@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="boomba.apps.android.ktmkotha.viewModel.DashBoardViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="70dp"
+            android:gravity="bottom|end"
+            android:orientation="vertical">
+
+            <boomba.apps.android.ktmkotha.view.widgets.FloatingActionMenu
+                android:id="@+id/floatingMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:visibility="@{viewModel.fabVisibility}"
+                fab:menu_animationDelayPerItem="0"
+                fab:menu_colorNormal="@color/colorPrimaryDark"
+                fab:menu_colorPressed="@color/colorAccent"
+                fab:menu_colorRipple="@color/colorAccent"
+                fab:menu_labels_hideAnimation="@anim/jump_to_down"
+                fab:menu_labels_showAnimation="@anim/jump_from_down"
+                fab:menu_labels_style="@style/MenuLabelsStyle"
+                fab:menu_shadowColor="#444">
+                <boomba.apps.android.ktmkotha.view.widgets.FloatingActionButton
+                    android:id="@+id/fb_favourite"
+                    style="@style/MenuButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel::onFavouriteClicked}"
+                    android:src="@drawable/eye"
+                    fab:fab_label="Favourite" />
+
+                <boomba.apps.android.ktmkotha.view.widgets.FloatingActionButton
+                    android:id="@+id/fb_street"
+                    style="@style/MenuButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel::onFab1Clicked}"
+                    android:src="@drawable/eye"
+                    fab:fab_label="Owner Profile" />
+
+                <boomba.apps.android.ktmkotha.view.widgets.FloatingActionButton
+                    android:id="@+id/fb_none"
+                    style="@style/MenuButtonsStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{viewModel::onFab2Clicked}"
+                    android:src="@drawable/home"
+                    fab:fab_label="Home" />
+
+
+            </boomba.apps.android.ktmkotha.view.widgets.FloatingActionMenu>
+
+
+        </LinearLayout>
+
+        <!-- Content Container -->
+
+        <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/bottom_navigation"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:minWidth="1000dp"-->
+        <!--app:OnNavigationItemSelectedListener="@{viewModel.navBottomSelected}"-->
+        <!--app:itemBackground="@color/colorPrimary"-->
+        <!--app:itemIconTint="#fff"-->
+        <!--app:itemTextColor="#fff"-->
+        <!--app:menu="@menu/menu"-->
+        <!--app:visibility="@{viewModel.bottomNavVisibility}" />-->
+
+    </RelativeLayout>
+</layout>

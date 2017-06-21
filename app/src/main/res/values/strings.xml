@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">KTMKOTHA</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_collapse_me">Collapse</string>
+    <string name="text_expand_me">expand me</string>
+    <string name="goggle_key">AIzaSyCdbSDKlH8vWW11NBUpLsh6a1a52iAx1oE</string>
+</resources>

@@ -1,0 +1,37 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="boomba.apps.android.ktmkotha.viewModel.FavouriteViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="boomba.apps.android.ktmkotha.view.fragments.Favourite">
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:onClick="@{viewModel.onSendClick}"
+            android:text="SEND"
+            android:textColor="#fff" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/favouriteRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/send"
+            tools:listitem="@layout/single_favourite" />
+
+    </RelativeLayout>
+</layout>

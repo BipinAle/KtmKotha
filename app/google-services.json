@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "319440668369",
+    "firebase_url": "https://ktmkotha.firebaseio.com",
+    "project_id": "ktmkotha",
+    "storage_bucket": "ktmkotha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319440668369:android:349b09850f3163cf",
+        "android_client_info": {
+          "package_name": "boomba.apps.android.ktmkotha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319440668369-3g3jq981h1jcf48e7j3ul6vr90pl6318.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "boomba.apps.android.ktmkotha",
+            "certificate_hash": "708f4ad528523340faa85b8bd307f512791bd072"
+          }
+        },
+        {
+          "client_id": "319440668369-04au2jellovqflea3ahvbtfru489lnbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4gRvM05fl0E4gKf3GzAAF1DseJk_59M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319440668369-04au2jellovqflea3ahvbtfru489lnbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
